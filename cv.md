@@ -29,3 +29,17 @@ _________________________
   - Search for potential contractors;
   - Maintaining the contract of employment (searching for potential partners, conduct of negotiations, conclusion of contracts);
   - Monitoring of the advertising services market analysis: market segments (TV, media, Radio);
+> *About me:*
+
+I have been studying JS since may 2020, I have self-study, my best sources:
++ youtube channels (Vladilen Minin),
++ https://learn.epam.com,
++ https://learn.javascript.ru,
++ https://metanit.com,
++ https://www.codewars.com/users/Serg_Grodno,
++ English level: Pre-Intermediate.  
++ Example my first code:
+  + f  
+
+
+I consider my strengths to be: purposefulness in the set projects, sociability, teamwork and individual work, curiosity,
