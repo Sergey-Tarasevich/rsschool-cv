@@ -1,56 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
-<aside class="test-color">
-    <p>
-        <img src=" " alt="">Foto.</p>
-    <div>
-
-        <h3>Contact info</h3>
-
-        <table class="table" style="width:50%">
-
-            <tr>
-                <td>BirthDay:</td>
-                <td>1987-10-09</td>
-            </tr>
-
-            <tr>
-                <td>Address:</td>
-                <td>Grodno, Belarus</td>
-            </tr>
-
-            <tr>
-                <td>Family status:</td>
-                <td>Married</td>
-            </tr>
-
-            <tr>
-                <td>Phone:</td>
-                <td>+375298840666</td>
-            </tr>
-
-            <tr>
-                <td>E-mail:</td>
-                <td>nsp@grodno.ru</td>
-            </tr>
-
-            <tr>
-                <td>GitHub:</td>
-                <td>Sergey Tarasevich</td>
-            </tr>
-
-        </table>
-    </div>
-</aside>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <ti tle>Document</title>
-</head>
+<html>
 
 <body>
+    <style>
+        .test-color {
+            background-color: lightgrey;
+            padding: 10px;
+            width: 190px;
+            float: left;
+            height: 900px;
+        }
+        
+        .table {
+            padding: 8px;
+            margin: 0px;
+        }
+        
+        .name {
+            text-align: center;
+        }
+        
+        .hide {
+            display: none;
+        }
+        
+        .hide+label~section {
+            display: none;
+        }
+        /* оформл€ем текст label */
+        
+        .hide+label {
+            border-bottom: 1px dotted red;
+            padding: 0;
+            color: blue;
+            cursor: pointer;
+            display: inline-block;
+        }
+        /* вид текста label при активном переключателе */
+        
+        .hide:checked+label {
+            color: red;
+            border-bottom: 0;
+        }
+        /* когда чекбокс активен показываем блоки с содержанием  */
+        
+        .hide:checked+label+section {
+            display: block;
+            background: #efefef;
+            -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+            -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+            box-shadow: inset 3px 3px 10px #7d8e8f;
+            padding: 10px;
+        }
+        /* demo контейнер */
+        
+        .demo {
+            margin: 5% 10%;
+        }
+    </style>
+    <header>
+        <title>CV Sergey Tarasevich</title>
+        <h1 class="name"><strong><u>Sergey Tarasevich</u></strong></h1>
+    </header>
 
+    <aside class="test-color">
+        <p>
+            <img src=" " alt="">Foto.</p>
+        <div>
+
+            <h3>Contact info</h3>
+
+            <table class="table" style="width:50%">
+
+                <tr>
+                    <td>BirthDay:</td>
+                    <td>1987-10-09</td>
+                </tr>
+
+                <tr>
+                    <td>Address:</td>
+                    <td>Grodno, Belarus</td>
+                </tr>
+
+                <tr>
+                    <td>Family status:</td>
+                    <td>Married</td>
+                </tr>
+
+                <tr>
+                    <td>Phone:</td>
+                    <td>+375298840666</td>
+                </tr>
+
+                <tr>
+                    <td>E-mail:</td>
+                    <td>nsp@grodno.ru</td>
+                </tr>
+
+                <tr>
+                    <td>GitHub:</td>
+                    <td>Sergey Tarasevich</td>
+                </tr>
+
+            </table>
+        </div>
+    </aside>
+
+    <section>
+
+        <h3><strong>Education:</strong></h3>
+
+        <p>&bullet; 2005 - graduated from secondary school No. 27 in Grodno, law class.<br> &bullet; 2005 - 2011 - Baranovichi state University, specialization-Economic law, faculty of Finance and law, correspondence Department.</p>
+
+
+        <h3><strong>Professional Preparation:</strong></h3>
+
+        <p>
+            &bullet; July 2011 Ц 2018 Ц SOOO Mobile TeleSystems, Specialist on work with key clients<br>
+            <u>Main responsibility:</u><br> - Search for potential contractors;<br> - Market research, monitoring and analysis;<br> - Conducting negotiations with contractors, negotiations, conclusion of contracts;<br> - Support of contracts, execution
+            of contractual discipline;</p>
+
+        <p>
+            &bullet;May 2009 Ц 2011 Ц TVRK GU "Grodno Plus", Senior advertising specialist<br>
+            <u>Main responsibility:</u><br> - Search for potential contractors;<br> - Maintaining the contract of employment (searching for potential partners, conduct of negotiations, conclusion of contracts);<br> - Monitoring of the advertising services
+            market analysis: market segments (TV, media, Radio).
+        </p>
+
+    </section>
+
+    <section>
+        <h3><strong>About me:</strong></h3>
+
+        I have been studying JS since may 2020 and I have self-studying every Day, my best sources:
+
+        <p>
+            <a href="https://www.youtube.com/channel/UCg8ss4xW9jASrqWGP30jXiw">Youtube channel (Vladilen Minin)</a><br>
+            <a href="https://learn.epam.com">Learn Epam</a><br>
+            <a href="https://learn.javascript.ru">Learn Javascript</a><br>
+            <a href="https://metanit.com">Metanit</a><br>
+            <a href="https://www.codewars.com/users/Serg_Grodno">Codewars</a>
+        </p>
+    </section>
+
+
+    <div>
+        <p>
+            English level: Pre-Intermediate<br> I consider my strengths to be: purposefulness in the set projects, sociability, teamwork and individual work, curiosity.
+        </p>
+    </div>
+
+    <h3><strong>Example my first code:</strong></h3>
+
+    <input type="checkbox" id="hd-1" class="hide" />
+    <label for="hd-1">Ќажмите здесь, чтобы увидеть пример кода</label>
+
+    <section>
+        <strong>***HTML***</strong><br> Recieve email news and offers.<br> SIGN UP<br> CATEGORIES
+        <br> New
+        <br> PUMA
+        <br> Apparel
+        <br> Accessories
+        <br> LAST CHANCE<br> SHOPPING INFO CUSTOM ORDERS CONTACT US PRIVACY POLICY TERMS OF USE name, LLC. All right reserved. Use of this site is subject to the name. Terms of Use and Privacy Policy. This site is operated by name, LLC. All logos, trademarks
+        and brands are property of their respective owners.
+        <p>
+            <strong>***CSS***</strong><br> .footer-top { font-size: 13pt; height: 10px; background-color: lightseaGreen; color: black; text-align: center; padding-top: 1px; padding-bottom: 68px;<br> }
+            <br> .sign-up { font-size: 9pt; text-align: center; border: 0; width: 135px; height: 36px; color: white; background-color: #2e71ff;<br> }
+            <br> h3 { padding-left: 30px; }<br> .email { width: 200px; height: 30px; padding-left: 30px;<br> }
+            <br> a { color: black; text-decoration: none;<br> }
+            <br> a:hover { text-decoration: underline; color: blue; font-weight: bold; }<br> .categories { line-height: 1.5; padding-left: 30px; }<br> .a-bottom { font-size: 13px;<br> }
+            <br> .footer-bottom { font-size: 13pt; height: 15px; background-color: burlywood; color: black; text-align: left; padding-left: 30px; padding-top: 1px; padding-bottom: 70px;<br> }
+            <br> .copyright { font-size: 7pt; text-align: left; padding-left: 0px; } ```
+        </p>
+
+    </section>
+
+    <footer>
+
+        <h5>Posted by: Sergey Tarasevich.</h5><a href="mailto:nsp@grodno.ru">E-mail</a>
+
+    </footer>
 
 </body>
 
